@@ -1,0 +1,15 @@
+sudo apt-get install libfaac-dev
+sudo apt-get install libmp3lame-dev
+sudo apt-get install libopencore-amrnb-dev
+sudo apt-get install libopencore-amrwb-dev
+sudo apt-get install libtheora-dev
+sudo apt-get install libvorbis-dev
+sudo apt-get install libx264-dev
+sudo apt-get install libavcodec-extra-54
+sudo apt-get install libav-tools
+sudo apt-get install libxvidcore-dev
+sudo apt-get install libvpx-dev
+
+
+
+
