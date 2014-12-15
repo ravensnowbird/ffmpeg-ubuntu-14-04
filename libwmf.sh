@@ -32,7 +32,7 @@ ldconfig
 cd $INSTALL_SDIR
 sleep 2
 echo "removing old source"
-   rm -vrf libwmf*
+#   rm -vrf libwmf*
    wget $SOURCE_URL/$libwmf
    tar -xvzf  $libwmf
    cd libwmf-0.2.8.4/

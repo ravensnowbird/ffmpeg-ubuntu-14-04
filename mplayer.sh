@@ -29,7 +29,7 @@ sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 
 cd $INSTALL_SDIR/
-rm -rf mplayer*
+#rm -rf mplayer*
 #wget $SOURCE_URL/$_package
 #tar -xvzf $_package
 /usr/local/cpffmpeg/bin/svn  checkout  svn://svn.mplayerhq.hu/mplayer/trunk mplayer

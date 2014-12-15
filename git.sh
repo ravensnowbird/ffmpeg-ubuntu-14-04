@@ -35,7 +35,7 @@ if [ -e "/usr/bin/git" ]; then
 	ln -sf /usr/bin/git  /usr/local/cpffmpeg/bin/git
 else
 	cd $INSTALL_SDIR/
-	rm -rf git*
+#	rm -rf git*
 	wget $SOURCE_URL/git-1.7.2.5.tar.gz
 	tar -xzf git-1.7.2.5.tar.gz
 	cd git-1.7.2.5/

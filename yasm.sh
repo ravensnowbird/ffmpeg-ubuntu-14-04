@@ -29,11 +29,11 @@ echo -e $RED"Installation of $_package ....... started"$RESET
 ldconfig
 cd $INSTALL_SDIR
 echo "Removing old source"
-rm -vrf yasm*
+#rm -vrf yasm*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd  yasm-1.2.0/
-	./configure --prefix=/usr/local/cpffmpeg/ 
+	./configure --prefix=/usr/local/cpffmpeg/
 make -j$cpu
 make install
 ln -sf /usr/local/cpffmpeg/bin/yasm /usr/local/bin/yasm

@@ -27,7 +27,7 @@ export LD_LIBRARY_PATH=/usr/local/cpffmpeg/lib:/usr/local/lib:/usr/lib:$LD_LIBRA
 export LIBRARY_PATH=/usr/local/cpffmpeg/lib:/usr/lib:/usr/local/lib:$LIBRARY_PATH
 export CPATH=/usr/local/cpffmpeg/include:/usr/include/:usr/local/include:$CPATH
 #presetup
-sh presetup.sh
+#sh presetup.sh
 
 if [ -e "/etc/yum.conf" ];then
         echo "Ensuring required RPM ........"
@@ -64,7 +64,7 @@ else
         echo " "
         echo " "
         exit
-fi 
+fi
 
 #Subversion client
 mkdir -pv /usr/local/cpffmpeg/bin/
@@ -79,7 +79,7 @@ else
         echo " "
         echo " "
         exit
-fi 
+fi
 
 
 
@@ -173,7 +173,7 @@ else
         exit
 fi
 
-# preset 
+# preset
 sh preset.sh
 #Rebuilding Mplayer
 sh mplayer.sh
@@ -191,4 +191,3 @@ fi
 sh mp4box.sh
 #post
 sh post.sh
-

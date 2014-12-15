@@ -30,11 +30,11 @@ subversion=$_package
 ldconfig
 cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf freetype*
+#   rm -vrf freetype*
    wget $SOURCE_URL/$_package
    tar -zxvf $_package
    cd freetype-2.5.2/
-   ./configure --prefix=$INSTALL_DDIR 
+   ./configure --prefix=$INSTALL_DDIR
 
 make -j$cpu
 make install

@@ -29,7 +29,7 @@ libogg_source=$_package
 ldconfig
     cd $INSTALL_SDIR
 echo "removing old source"
-   	rm -vrf libogg*
+ #  	rm -vrf libogg*
    	wget $SOURCE_URL/$libogg_source
    	tar -xvzf $_package
    	cd libogg-1.3.1/

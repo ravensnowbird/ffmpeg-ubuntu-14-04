@@ -28,12 +28,12 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf facc*
+#rm -rf facc*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd faac-1.28/
 ./bootstrap
-./configure --prefix=$INSTALL_DDIR  --with-mp4v2      
+./configure --prefix=$INSTALL_DDIR  --with-mp4v2
 
 make -j$cpu
 make install

@@ -33,7 +33,7 @@ codec_source=$_package
 ldconfig
    cd $INSTALL_SDIR
 echo "removing old source"
-   rm -fr all* 
+#   rm -fr all* 
    wget $SOURCE_URL/$codec_source
    tar -xvjf $codec_source
    chown -R root.root all-20110131/

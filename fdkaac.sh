@@ -29,7 +29,7 @@ sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 
 cd $INSTALL_SDIR/
-rm -rf fdk-aac*
+#rm -rf fdk-aac*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd fdk-aac-0.1.3/

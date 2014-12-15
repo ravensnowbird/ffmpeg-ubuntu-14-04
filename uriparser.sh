@@ -28,14 +28,14 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf uriparser*
+#rm -rf uriparser*
 
 yum -y install doxygen graphviz-devel graphviz expat expat-devel
 wget -c $SOURCE_URL/$_package
 tar -xvjf $_package
 cd uriparser-0.8.0/
 ./configure  --prefix=/usr/local/cpffmpeg --disable-test
-make 
+make
 make install
 ldconfig
 echo -e $RED"Installation of $_package ....... Completed"$RESET

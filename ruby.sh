@@ -23,7 +23,7 @@ SOURCE_URL='http://mirror.ffmpeginstaller.com/source/ruby'
 INSTALL_DDIR='/usr/local/cpffmpeg'
 export cpu=`cat "/proc/cpuinfo" | grep "processor"|wc -l`
 export TMPDIR=$HOME/tmp
-_package='ruby-1.8.7.tar.gz' 
+_package='ruby-1.8.7.tar.gz'
 ruby='ruby-1.8.7.tar.gz'
 clear
 sleep 2
@@ -39,12 +39,12 @@ elif  [ -e "/usr/local/cpanel/scripts/installruby" ]; then
 else
 	cd $INSTALL_SDIR
 	echo "removing old source"
-   	rm -vrf ruby*
+#   	rm -vrf ruby*
    	wget $SOURCE_URL/$ruby
    	tar -xvzf  $ruby
    	cd ruby-1.8.7/
    	./configure --prefix=$INSTALL_DDIR
-	make 
+	make
 	make install
 fi
 echo -e $RED"Installation of $_package ....... Completed"$RESET

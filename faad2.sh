@@ -28,12 +28,12 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf faad2*
+#rm -rf faad2*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd faad2-2.7/
 ./bootstrap
-./configure --prefix=$INSTALL_DDIR  --with-mpeg4ip      
+./configure --prefix=$INSTALL_DDIR  --with-mpeg4ip
 
 make -j$cpu
 make install

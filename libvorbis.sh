@@ -31,7 +31,7 @@ libvorbis_source=$_package
 ldconfig
    cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf libvorbis*
+#   rm -vrf libvorbis*
    wget $SOURCE_URL/$libvorbis_source
    tar -xvzf $_package
    cd libvorbis-1.3.4/

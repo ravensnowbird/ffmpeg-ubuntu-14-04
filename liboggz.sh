@@ -28,7 +28,7 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf libogg**
+#rm -rf libogg**
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd liboggz-1.1.1/

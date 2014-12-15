@@ -31,7 +31,7 @@ amr=$_package
 ldconfig
    cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf amrnb*
+   #rm -vrf amrnb*
    wget $SOURCE_URL/$amr
    tar -xvjf $amr
    cd amrnb-11.0.0.0/

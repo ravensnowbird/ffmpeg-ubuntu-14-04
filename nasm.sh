@@ -36,11 +36,11 @@ fi
 if [ -e "/usr/bin/nasm" ]; then
 	ln -sf /usr/bin/nasm  /usr/local/cpffmpeg/bin/nasm
 else
-	rm -vrf nasm*
+#	rm -vrf nasm*
 	wget $SOURCE_URL/$_package
 	tar -xvzf $_package
 	cd  nasm-2.06rc1/
-	./configure --prefix=/usr/local/cpffmpeg/ 
+	./configure --prefix=/usr/local/cpffmpeg/
 	make -j$cpu
 	make install
 	ln -sf /usr/local/cpffmpeg/bin/nasm /usr/local/bin/nasm

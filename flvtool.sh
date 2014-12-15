@@ -32,7 +32,7 @@ flvtool_source=$_package
 ldconfig
    cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf flvtool*
+#   rm -vrf flvtool*
    wget $SOURCE_URL/$flvtool_source
    tar -zxvf  $_package
    cd flvtool2-1.0.6/

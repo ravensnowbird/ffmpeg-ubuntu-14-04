@@ -29,7 +29,7 @@ vorbistools=$_package
 ldconfig
    cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf vorbis-tools*
+#   rm -vrf vorbis-tools*
    wget $SOURCE_URL/$vorbistools
    tar -xvzf $vorbistools
    cd vorbis-tools-1.4.0/

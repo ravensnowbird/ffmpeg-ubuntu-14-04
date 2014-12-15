@@ -30,7 +30,7 @@ amrwb=$_package
 ldconfig
    cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf amrwb*
+#   rm -vrf amrwb*
    wget $SOURCE_URL/$amrwb
    tar -xvjf $_package
    cd amrwb-11.0.0.0/

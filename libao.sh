@@ -28,7 +28,7 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf libao*
+#rm -rf libao*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd libao-1.1.0/

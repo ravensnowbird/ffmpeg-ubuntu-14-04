@@ -31,7 +31,7 @@ lame_source=$_package
 ldconfig
 cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf lame*
+#   rm -vrf lame*
    wget $SOURCE_URL/$lame_source
    tar -zxvf $_package
    cd lame-3.99.5/

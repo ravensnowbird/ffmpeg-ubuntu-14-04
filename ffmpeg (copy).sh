@@ -31,7 +31,7 @@ ldconfig
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR
 echo "Removing old source"
-   rm -vrf ffmpeg*
+#   rm -vrf ffmpeg*
    #wget $SOURCE_URL/$ffmpeg_source
    #tar -xvzf $ffmpeg_source
 	git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
@@ -44,7 +44,7 @@ echo "Removing old source"
 		--extra-cflags=-I/usr/local/cpffmpeg/include/ --extra-ldflags=-L/usr/local/cpffmpeg/lib \
 		 --enable-version3 --extra-version=syslint
    make -j$cpu
-   make tools/qt-faststart   
+   make tools/qt-faststart
    make install
    cp -vf tools/qt-faststart /usr/local/cpffmpeg/bin/
    ln -sf /usr/local/cpffmpeg/bin/ffmpeg /usr/local/bin/ffmpeg

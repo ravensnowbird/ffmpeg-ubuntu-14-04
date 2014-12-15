@@ -28,11 +28,11 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf yamdi*
+#rm -rf yamdi*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd yamdi-1.9/
-make 
+make
 make install
 
 echo -e $RED"Installation of $_package ....... Completed"$RESET

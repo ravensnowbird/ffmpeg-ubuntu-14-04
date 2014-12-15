@@ -30,7 +30,7 @@ echo -e $RED"Installation of $_package ....... started"$RESET
 ldconfig
 cd $INSTALL_SDIR
 echo "Removing old source"
-   rm -vrf $INSTALL_SDIR/x264-snapshot*
+#   rm -vrf $INSTALL_SDIR/x264-snapshot*
 	git clone git://git.videolan.org/x264.git
 	cd x264/
 	./configure  --prefix=$INSTALL_DDIR --enable-shared --disable-asm

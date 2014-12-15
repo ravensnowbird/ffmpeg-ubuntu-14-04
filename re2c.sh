@@ -30,7 +30,7 @@ echo -e $RED"Installation of $_package ....... started"$RESET
 ldconfig
 cd $INSTALL_SDIR
 echo "Removing old source"
-   rm -vrf re2c*
+#   rm -vrf re2c*
    wget $SOURCE_URL/$_package
    tar -xvzf $_package
    cd re2c-0.13.6/

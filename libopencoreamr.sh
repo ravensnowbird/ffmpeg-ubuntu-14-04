@@ -31,11 +31,11 @@ libopencoreamr=$_package
 ldconfig
 cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf opencore*
+#   rm -vrf opencore*
    wget $SOURCE_URL/$_package
    tar -zxvf $_package
    cd opencore-amr-0.1.2/
-   ./configure --prefix=$INSTALL_DDIR 
+   ./configure --prefix=$INSTALL_DDIR
 
 make -j$cpu
 make install

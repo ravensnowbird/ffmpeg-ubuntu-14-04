@@ -28,7 +28,7 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf flac*
+#rm -rf flac*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd flac-1.3.0/

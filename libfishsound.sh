@@ -29,7 +29,7 @@ sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 
 cd $INSTALL_SDIR/
-rm -rf libfish*
+#rm -rf libfish*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd libfishsound-1.0.0/

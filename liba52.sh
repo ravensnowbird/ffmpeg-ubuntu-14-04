@@ -28,7 +28,7 @@ clear
 sleep 2
 echo -e $RED"Installation of $_package ....... started"$RESET
 cd $INSTALL_SDIR/
-rm -rf a52dec-0.7.4*
+#rm -rf a52dec-0.7.4*
 wget $SOURCE_URL/$_package
 tar -xvzf $_package
 cd a52dec-0.7.4/
@@ -36,8 +36,8 @@ cd a52dec-0.7.4/
 ARCh=`arch`
 #64bit processor bug fix
 if [[ $ARCh == 'x86_64' ]];then
-	./configure --prefix=$INSTALL_DDIR --enable-shared 'CFLAGS=-fPIC'	
-        
+	./configure --prefix=$INSTALL_DDIR --enable-shared 'CFLAGS=-fPIC'
+
 else
         ./configure --prefix=$INSTALL_DDIR  --enable-shared
 fi

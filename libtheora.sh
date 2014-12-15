@@ -31,7 +31,7 @@ libtheora=$_package
 ldconfig
    cd $INSTALL_SDIR
 echo "removing old source"
-   rm -vrf libtheora*
+#   rm -vrf libtheora*
    wget $SOURCE_URL/$libtheora
    tar -xvzf $libtheora
    cd libtheora-1.1.1/
